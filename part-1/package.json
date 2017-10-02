@@ -1,0 +1,19 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Build a very basic web API which conforms to the routes listed below.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "johnware15",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
