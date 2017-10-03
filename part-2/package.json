@@ -1,0 +1,24 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "description": "Build a command line tool that emulates a hotel management system for tracking room bookings. The tool will interact with a PostgreSQL database to store and retrieve information. You will have to design a database to store **guests**, **rooms**, and **bookings**. Let's call the database `hotel_db`.",
+  "main": "database.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "db-init": "psql < schema.dql",
+    "testdb-init": "export NODE_ENV=test && psql < schema_test.sql"
+  },
+  "author": "johnware15",
+  "license": "MIT ",
+  "dependencies": {
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "node-print": "0.0.4"
+  }
+}

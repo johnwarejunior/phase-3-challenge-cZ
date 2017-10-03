@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS hotel_db_test
-CREATE DATABASE hotel_db_test
+DROP DATABASE IF EXISTS hotel_db_test;
+CREATE DATABASE hotel_db_test;
 
 \c hotel_db_test
 
