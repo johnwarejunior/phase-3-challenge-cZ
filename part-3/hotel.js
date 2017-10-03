@@ -17,3 +17,9 @@ for (var i = 0; i < book.length; i++) {
     bookingContent()
   })
 }
+
+function bookingContent() {
+  modalRoomNum.innerHTML = 'Room' + room.num;
+  modalPrice.innerHTML = room.price + 'per Night';
+  modal.style.display = 'block';
+}
