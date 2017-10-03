@@ -33,10 +33,10 @@ describe('rooms', function() {
       expect(result).to.have.lengthOf(18)
     })
   })
-  it('should list room 5B as the last room', function() {
+  it('should list room 5A as the last room', function() {
     return rooms()
     .then(result => {
-      expect(result[17].room_num).to.equal('2D')
+      expect(result[17].room_num).to.equal('5A')
     })
   })
 })

@@ -52,6 +52,14 @@ switch(process.argv[2]) {
       })
       .catch(error => console.log(error))
       break
+    } else {
+      currentBookings(userInput)
+      .then(result => {
+        client.end()
+        print.pt(result)
+      })
+      .catch(error => console.log(error))
+      break
     }
 
     default:

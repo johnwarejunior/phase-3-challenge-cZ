@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "db-init": "psql < schema.dql",
+    "db-init": "psql < schema.sql",
     "testdb-init": "export NODE_ENV=test && psql < schema_test.sql"
   },
   "author": "johnware15",
