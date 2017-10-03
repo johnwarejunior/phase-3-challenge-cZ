@@ -23,3 +23,14 @@ function bookingContent() {
   modalPrice.innerHTML = room.price + 'per Night';
   modal.style.display = 'block';
 }
+
+close.addEventListener('click', function() {
+  modal.style.display = 'none';
+  modalTotal.innerHTML = '$ 0';
+})
+
+quantity.addEventListener('change', function(event) {
+  event.preventDefault();
+  let total = this.value * parseFloat(room.price.slice(1));
+  modalTotal.innerHTML = '$ ' + total.toFixed(2);
+})
