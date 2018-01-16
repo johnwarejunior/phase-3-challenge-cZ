@@ -5,6 +5,7 @@ const modalRoomNum = document.getElementById('roomNum')
 const modalPrice = document.getElementById('pricePerNight')
 const modalTotal = document.getElementById('total')
 const quantity = document.querySelector('#quantity')
+const button = document.getElementsByClassName('button')
 
 let room = []
 
